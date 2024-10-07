@@ -13,10 +13,10 @@ void check(Pessoa pessoa) {
 }
 
 void main() {
-  Pessoa pessoa1 = new Pessoa(15, 'Homen');
+  Pessoa pessoa1 = new Pessoa(15, 'Homem');
   Pessoa pessoa2 = new Pessoa(19, 'Mulher');
   Pessoa pessoa3 = new Pessoa(16, 'Mulher');
-  Pessoa pessoa4 = new Pessoa(72, 'Homen');
+  Pessoa pessoa4 = new Pessoa(72, 'Homem');
 
   check(pessoa1);
   check(pessoa2);
