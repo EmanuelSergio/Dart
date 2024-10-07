@@ -5,17 +5,29 @@ class Pessoa{
   int _cont = 0;
 
   void set milhas(int milhas){
-    _milhas = milhas;
+    if(milhas < 0){
+      print('Milhas não podem ser menor que 0');
+    }else{
+      _milhas = milhas;
+      }
   }
   int get milhas => _milhas;
 
   void set pontos(int pontos){
-    _pontos = pontos;
+    if(pontos < 0){
+    print('Pontos não podem ser menor que 0');
+    }else{
+      _pontos = pontos;
+    }
   }
   int get pontos => _pontos;
 
   void set cont(int cont){
-    _cont = cont;
+    if(cont < 0){
+  print('Contador não pode iniciar menor que 0');  
+    }else {
+      _cont = cont;
+    }
   }
   int get cont => _cont;
 }
