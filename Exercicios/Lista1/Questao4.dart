@@ -12,9 +12,9 @@ void pessoavota(Pessoa pessoa) {
 
   if(pessoa.idade < 16){
     print(pessoa.nome + ' nao vota');
-  }else if(pessoa.idade >= 16 || pessoa.idade < 18){
+  }else if(pessoa.idade >= 16 && pessoa.idade < 18){
     print(pessoa.nome + ' voto optativo');
-  }else if (pessoa.idade >= 18 || pessoa.idade < 70) {
+  }else if (pessoa.idade >= 18 && pessoa.idade < 70) {
     print(pessoa.nome + ' voto obrigatorio');
   }else if (pessoa.idade >= 70) {
     print(pessoa.nome + ' voto facultativo');
@@ -34,6 +34,6 @@ void main(){
   pessoavota(pessoa3);
   pessoavota(pessoa4);
 
-  
+
 
 }
