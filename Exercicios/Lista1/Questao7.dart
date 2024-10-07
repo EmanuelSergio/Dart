@@ -1,16 +1,16 @@
 class Pessoa{
   int pontos;
   int milhas;
-  Pessoa(this.milhas, this.pontos);
+  int cont;
+  Pessoa(this.milhas, this.pontos,this.cont);
 }
 
 void conversaoMilhas(Pessoa pessoa){
-  int cont=0;
   pessoa.milhas++;
-  cont++;
-  if(cont == 12){
+  pessoa.cont++;
+  if(pessoa.cont == 12){
     pessoa.pontos++;
-    cont = 0;
+    pessoa.cont = 0;
   }
   if(pessoa.pontos == 10){
     print('Você foi contemplado');
@@ -19,5 +19,10 @@ void conversaoMilhas(Pessoa pessoa){
 }
 
 void main(){
-
+  Pessoa pessoa = Pessoa(0,0,0);
+  for(int i = 1; i <= 120; i++){
+    conversaoMilhas(pessoa);
+  }
+  print(pessoa.milhas);
+  print(pessoa.pontos);
 }
