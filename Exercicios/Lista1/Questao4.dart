@@ -34,6 +34,4 @@ void main(){
   pessoavota(pessoa3);
   pessoavota(pessoa4);
 
-
-
 }
