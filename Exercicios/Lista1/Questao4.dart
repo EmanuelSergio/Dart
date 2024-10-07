@@ -1,7 +1,35 @@
 class Pessoa {
-  String nome;
-  int idade;
-  Pessoa(this.idade, this.nome);
+  String _nome;
+  int _idade;
+
+  // Construtor vazio
+  Pessoa();
+
+  // Construtor com parâmetros
+  Pessoa(this._idade, this._nome);
+
+  void set nome(String novoNome) {
+    if (novoNome.isNotEmpty) {
+      _nome = novoNome;
+    } else {
+      print('Nome inválido.');
+    }
+  }
+
+  void set idade(int novaIdade) {
+    if (novaIdade > 0) {
+      _idade = novaIdade;
+    } else {
+      print('Idade inválida.');
+    }
+  }
+
+  String get nome => _nome;
+  int get idade => _idade;
+
+  void exibirInfo() {
+    print('Nome: $_nome, Idade: $_idade');
+  }
 }
 
 void pessoavota(Pessoa pessoa) {
@@ -24,7 +52,8 @@ void pessoavota(Pessoa pessoa) {
 
 void main(){
 
-  Pessoa pessoa1 = new Pessoa(15, 'emanuel');
+  Pessoa pessoa1 = Pessoa();
+  pessoa1.idade = 15;
   Pessoa pessoa2 = new Pessoa(19, 'henry');
   Pessoa pessoa3 = new Pessoa(16, 'william');
   Pessoa pessoa4 = new Pessoa(72, 'Irineu');
