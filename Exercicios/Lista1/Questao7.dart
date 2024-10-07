@@ -1,9 +1,23 @@
 
 class Pessoa{
-  int pontos;
-  int milhas;
-  int cont;
-  Pessoa(this.milhas, this.pontos,this.cont);
+  int _pontos = 0;
+  int _milhas = 0;
+  int _cont = 0;
+
+  void set milhas(int milhas){
+    _milhas = milhas;
+  }
+  int get milhas => _milhas;
+
+  void set pontos(int pontos){
+    _pontos = pontos;
+  }
+  int get pontos => _pontos;
+
+  void set cont(int cont){
+    _cont = cont;
+  }
+  int get cont => _cont;
 }
 
 void conversaoMilhas(Pessoa pessoa){
@@ -20,7 +34,7 @@ void conversaoMilhas(Pessoa pessoa){
 }
 
 void main(){
-  Pessoa pessoa = Pessoa(0,0,0);
+  Pessoa pessoa = Pessoa();
   for(int i = 1; i <= 120; i++){
     conversaoMilhas(pessoa);
   }
