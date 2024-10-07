@@ -1,4 +1,3 @@
-
 class Pessoa{
   int pontos;
   int milhas;
