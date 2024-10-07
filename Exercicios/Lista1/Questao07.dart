@@ -1,4 +1,3 @@
-
 class Pessoa{
   int pontos;
   int milhas;
@@ -6,9 +5,8 @@ class Pessoa{
 }
 
 void conversaoMilhas(Pessoa pessoa){
-  int cont=0;
-  
-
+  pessoa.pontos = pessoa.milhas / 12;
+  pessoa.milhas = pessoa.milhas % 12;
 }
 
 void main(){
