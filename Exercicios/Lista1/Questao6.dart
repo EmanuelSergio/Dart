@@ -2,7 +2,6 @@ class Pessoa {
   String _genero = '';
   int _idade = 0;
 
-Pessoa();
 Pessoa(this._genero,this._idade);
 
   void set genero(String novoGenero) {

@@ -2,9 +2,6 @@ class Pessoa {
   String _nome;
   int _idade;
 
-  // Construtor vazio
-  Pessoa();
-
   // Construtor com parâmetros
   Pessoa(this._idade, this._nome);
 
