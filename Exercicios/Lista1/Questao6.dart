@@ -31,7 +31,7 @@ void check(Pessoa pessoa) {
   if (pessoa.idade < 18 && pessoa.genero != 'Mulher') {
     print('Não ganhou brinde');
   } else {
-    print('Ganhou brinde');
+    print('Ganhou brindeddd');
   }
 }
 
