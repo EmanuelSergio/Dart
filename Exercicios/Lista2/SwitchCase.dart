@@ -26,6 +26,7 @@ print("Listando produtos");
       break;
   default:
   rodando = false;
+  print(rodando);
 }
 }
 }
