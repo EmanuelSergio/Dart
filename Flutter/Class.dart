@@ -7,6 +7,7 @@ void dormir() {
 }
 
 class Cao extends Animal{
+  String raca = "";
   void latir(){
     print("Está latindo");
   }
@@ -22,11 +23,14 @@ void main(){
   Cao cachorro = Cao();
   cachorro.cor = "Preto";
   cachorro.peso = 10.5;
+  cachorro.raca = "Pitbull";
   cachorro.latir();
   cachorro.dormir();
+  print(cachorro.cor);
   Passaro passaro = Passaro();
   passaro.cor = "Rosa";
   passaro.peso = 2.1;
   passaro.voar();
   passaro.dormir();
+  print(passaro.cor);
 }
