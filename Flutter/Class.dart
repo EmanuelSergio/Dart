@@ -9,7 +9,12 @@ void dormir() {
 class Cao extends Animal{
   String raca = "";
   void latir(){
-    print("Está latindo");
+    print("Au au au");
+  }
+  @override
+  void dormir(){
+    super.dormir();
+    print("Cão Dormindo");
   }
 }
 
