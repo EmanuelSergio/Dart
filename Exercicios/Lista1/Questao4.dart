@@ -2,9 +2,6 @@ class Pessoa {
   String _nome;
   int _idade;
 
-  // Construtor vazio
-  Pessoa();
-
   // Construtor com parâmetros
   Pessoa(this._idade, this._nome);
 
@@ -52,8 +49,7 @@ void pessoavota(Pessoa pessoa) {
 
 void main(){
 
-  Pessoa pessoa1 = Pessoa();
-  pessoa1.idade = 15;
+  Pessoa pessoa1 = Pessoa(15, 'pedro');
   Pessoa pessoa2 = new Pessoa(19, 'henry');
   Pessoa pessoa3 = new Pessoa(16, 'william');
   Pessoa pessoa4 = new Pessoa(72, 'Irineu');
