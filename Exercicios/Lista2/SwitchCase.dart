@@ -1,6 +1,6 @@
 void main(){
 
-var comando = "Cadastrar usuario";
+var comando = " ";
 var rodando = true;
 
 while(rodando = true){
