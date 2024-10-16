@@ -13,6 +13,10 @@ while(numero >= 0){
 while(numero <= 10){
   print("Recarregando $numero");
   numero++;
+  if (numero <= 0) {
+      print("Recarregar");
+      break;
+    }
 }
 
 }
