@@ -35,19 +35,19 @@ void check(Pessoa pessoa) {
 }
 
 void main() {
-  Pessoa pessoa1 = Pessoa();
+  Pessoa pessoa1 = Pessoa(' ', 0);
   pessoa1.genero = 'Homem';
   pessoa1.idade = 15;
 
-  Pessoa pessoa2 = Pessoa();
+  Pessoa pessoa2 = Pessoa(' ', 0);
   pessoa2.genero = 'Mulher';
   pessoa2.idade = 19;
 
-  Pessoa pessoa3 = Pessoa();
+  Pessoa pessoa3 = Pessoa(' ', 0);
   pessoa3.genero = 'Mulher';
   pessoa3.idade = 16;
 
-  Pessoa pessoa4 = Pessoa();
+  Pessoa pessoa4 = Pessoa(' ', 0);
   pessoa4.genero = 'Homem';
   pessoa4.idade = 72;
 
