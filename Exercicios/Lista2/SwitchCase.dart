@@ -3,7 +3,7 @@ void main(){
 var comando = " ";
 var rodando = true;
 
-while(rodando = true){
+while(rodando == true){
 switch (comando) {
   case "Cadastrar usuario":
   print("Usuario cadastrado");
