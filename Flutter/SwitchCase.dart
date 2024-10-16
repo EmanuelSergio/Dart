@@ -1,22 +1,32 @@
-void main() {
-  var comando = "sacar";
+void main(){
 
-  switch (comando) {
-    case "depositar":
-      print("Deposite um valor");
-      break;
-    case "sacar":
-      print("Saque um valor");
-      break;
-    default:
-      print("valor invalido");
-  }
+var comando = " ";
+var rodando = true;
 
-  if (comando == "sacar") {
-    print("saque um valor");
-  } else if (comando == "depositar") {
-    print("deposite um valor");
-  } else {
-    print("valor invalido");
-  }
+while(rodando == true){
+switch (comando) {
+  case "Cadastrar usuario":
+  print("Usuario cadastrado");
+
+    break;
+  case "Cadastrar cliente":
+print("Cliente cadastrado");
+      break;
+  case "Cadastrar produto":
+print("Produto cadastrado");
+      break;
+  case "Listar usuarios":
+print("Listando usuarios");
+      break;
+  case "Listar clientes":
+print("Listando clientes");
+      break;
+  case "Listar produtos":
+print("Listando produtos");
+      break;
+  default:
+  rodando = false;
+  print(rodando);
+}
+}
 }
